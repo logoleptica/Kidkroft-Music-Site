@@ -1485,6 +1485,7 @@ ol {
 @media only screen and (min-width: 1200px) {
 	.container {
 		max-width: 1170px;
+		display: grid;
 	}
 }
 
@@ -1796,4 +1797,37 @@ ol {
 		margin-top: -970px;
 		background-position: top 0 left 19%;
 	}
+}
+
+.discography__item__pic {
+    position: relative;
+    width: 100%; /* Ensure the width of the parent container is used */
+    padding-top: 100%; /* Makes the element square by setting height proportional to width */
+    overflow: hidden;
+    background-color: #f0f0f0; /* Optional: placeholder background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.discography__item__pic img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fills the square without distortion */
+    transform: translate(-50%, -50%);
+}
+
+.discography {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Adds space between grid items */
+}
+
+.discography__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
