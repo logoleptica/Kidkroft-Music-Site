@@ -1,1 +1,1 @@
-KidKroft music and art site
+Lök Life Beats is a music-focused website designed to showcase an artist's discography, provide social media integration, and offer an interactive music experience. It features sections like the homepage, about, discography, and artist information. The site is mobile-friendly, visually engaging, and includes music player functionality with a clean and modern design
